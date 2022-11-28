@@ -41,7 +41,7 @@ function TableComponent({ data, tableConfig }) {
   // }, []);
 
   return (
-    <div className="table-container container">
+    <div className="">
       <table >
     
         <tr>

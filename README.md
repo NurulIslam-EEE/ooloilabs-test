@@ -1,8 +1,11 @@
-# ooloilabs
+# ooloilabs-test
 
-Live Link [ooloilabs-assignments](https://ooloilabs.netlify.app/).
+Live Link [ooloilabs-test](https://ooloilabs.netlify.app/).
 
 ## Used Technologies
 
-In the project directory, you can run:
+### React, Bootstrap
+
+
+
 

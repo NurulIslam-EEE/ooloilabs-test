@@ -1,6 +1,7 @@
 import React from "react";
 import TableComponent from "../components/TableComponent";
 import data from "../tableTestData.json";
+import tab0 from "../table0Config.json"
 import tab1 from "../table1Config.json"
 import tab2 from "../table2Config.json"
 import tab3 from "../table3Config.json"
@@ -60,9 +61,14 @@ function Home() {
       sort: false },
   };
   return (
-    <div>
+    <div className="table-container container">
+      <h3>Part 01: All colum with sort</h3>
+      <TableComponent data={data} tableConfig={tab0} />
+      <h3>Part 02 : Selective colum with sort on selective column</h3>
       <TableComponent data={data} tableConfig={tab1} />
+   
       <TableComponent data={data} tableConfig={tab2} />
+  
       <TableComponent data={data} tableConfig={tab3} />
     </div>
   );

@@ -4,15 +4,39 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-/* table{
-  table-layout: fixed;
-  word-wrap: break-word;
-} */
+.navigation{
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.nav-btn{
+  border: 0;
+  display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease, visibility 0s;
+    background: #684AA8;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 20px;
+}
+
+
 table{
   border: 1px solid #E1E1E1;
   /* word-wrap: break-word; */
   border-collapse: collapse;
   overflow-x: scroll;
+  margin-bottom: 30px;
+}
+
+.table-container h3{
+margin: 20px 0;
 }
 
 .sort-icon{
