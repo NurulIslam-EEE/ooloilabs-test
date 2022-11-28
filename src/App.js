@@ -5,7 +5,6 @@ import {
   Link,
 } from "react-router-dom";
 import Home from "./Pages/Home";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "./components/common/Navigation";
 
 function App() {

@@ -4,42 +4,64 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-.navigation{
-  border-bottom: 1px solid #E1E1E1;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.nav-btn{
-  border: 0;
+.logo-container {
+  width: 180px;
+}
+.navigation {
+  border-bottom: 1px solid #e1e1e1;
+}
+.nav-container {
   display: flex;
-    flex-basis: auto;
-    justify-content: center;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    transition: all 0.2s ease, visibility 0s;
-    background: #684AA8;
-    color: #fff;
-    font-weight: 700;
-    padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.nav-btn {
+  border: 0;
+  display: block;
+  display: flex;
 
-table{
-  border: 1px solid #E1E1E1;
+  justify-content: center;
+
+  align-items: center;
+  overflow: hidden;
+
+  width: 200px;
+  height: 35px;
+  transition: all 0.2s ease, visibility 0s;
+  background: #684aa8;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.table-component-container {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+.table-component-container::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  border: 1px solid #e1e1e1;
   /* word-wrap: break-word; */
   border-collapse: collapse;
-  overflow-x: scroll;
+
   margin-bottom: 30px;
 }
 
-.table-container h3{
-margin: 20px 0;
+.table-container h3 {
+  margin: 20px 0;
 }
 
-.sort-icon{
+.sort-icon {
   height: 15px;
   width: 15px;
 }
@@ -47,12 +69,8 @@ margin: 20px 0;
 .profile-container {
   display: flex;
   align-items: center;
- 
 }
-.container {
-  max-width: 920px;
-  margin: 0 auto;
-}
+
 
 .table-container {
   padding: 20px;
@@ -72,7 +90,7 @@ margin: 20px 0;
   overflow: hidden;
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
 }
 
 .mail-address {
@@ -81,24 +99,21 @@ justify-content: center;
   cursor: pointer;
 }
 
-
 table tr th {
-  font-family: "Noto Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 170%;
   color: #383838;
-  width: 175px ;
-  min-width: 175px ;
+  width: 175px;
+  min-width: 175px;
   height: 40px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 
   border-collapse: collapse;
   padding-left: 10px;
 }
 table tr td {
-  font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -106,28 +121,25 @@ table tr td {
   /* width: 175px; */
   height: 40px;
   color: #383838;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 
   border-collapse: collapse;
   padding-left: 10px;
 }
 
-.email-column{
-width: 220px;
-min-width: 220px;
-}
-/* .table-container table{
-    width: 100%;
-    border: 1px solid #E1E1E1;
-} */
-
-/* .table-container table tr td,.table-container table tr th{
-    padding: 0 ;
-} */
-.table-container table tr:nth-child(even){
-    background: #F5F5F5;
+.email-column {
+  width: 220px;
+  min-width: 220px;
 }
 
-/* .table-container table tr td:not(:last-child),.table-container table tr th:not(:last-child){
-    border-right: 1px solid #E1E1E1;
-} */
+.table-container table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+
+@media only screen and (max-width: 400px){
+  .nav-container{
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
