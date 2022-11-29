@@ -20,7 +20,14 @@ function TableComponent({ data, tableConfig }) {
         if (property === "name") {
           x = a.person[property].toLowerCase();
           y = b.person[property].toLowerCase();
-        } else {
+        } else if(property==="joiningDate"){
+          const xDate=a[property].split("/").reverse().join("-")
+          const yDate=b[property].split("/").reverse().join("-")
+          x = new Date(xDate).getTime() ;
+          y = new Date(yDate).getTime();
+          
+        }
+        else {
           x = a[property].toLowerCase();
           y = b[property].toLowerCase();
         }
