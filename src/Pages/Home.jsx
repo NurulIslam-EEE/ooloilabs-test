@@ -11,9 +11,9 @@ function Home() {
 
   return (
     <div className="table-container container">
-      <h3>Part 01: All colum with sort</h3>
+      <h3>Part 01: All columns with sort functionality</h3>
       <TableComponent data={data} tableConfig={tab0} />
-      <h3>Part 02 : Selective colum with sort on selective column</h3>
+      <h3>Part 02 : Selective columns with sort functionality on selective columns</h3>
       <TableComponent data={data} tableConfig={tab1} />
    
       <TableComponent data={data} tableConfig={tab2} />
